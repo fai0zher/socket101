@@ -16,5 +16,5 @@ while True:
 
     data = client.recv(buffsize).decode('utf-8')
     print('Data from client:',data)
-    client.send('hello world'.encode('utf-8'))
+    client.send('you connected'.encode('utf-8'))
     client.close()
